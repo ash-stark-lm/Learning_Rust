@@ -1,6 +1,6 @@
 # Learning Rust — Workspace Setup
 
-This short guide shows how to create a simple Rust workspace and add member projects.
+This short guide shows how this `Learning_Rust` workspace is structured and how the `Cargo.toml` files are wired up.
 
 ✅ Step 1 — Create Root Folder
 
@@ -11,75 +11,70 @@ mkdir Learning_Rust
 cd Learning_Rust
 ```
 
-✅ Step 2 — Create Workspace `Cargo.toml` (Important)
+✅ Step 2 — Workspace `Cargo.toml` (Root)
 
-Create a root `Cargo.toml` that declares the directory as a workspace:
-
-```bash
-touch Cargo.toml
-```
-
-Open `Cargo.toml` and write:
+The root `Cargo.toml` declares this directory as a workspace and lists the three member crates:
 
 ```toml
 [workspace]
-members = []
-```
-
-This tells Cargo:
-
-- The folder is a workspace.
-- Projects inside it will be workspace members.
-
-✅ Step 3 — Create Projects Inside Workspace
-
-Create projects the normal way (examples below create binary crates):
-
-```bash
-cargo new chapter-1
-cargo new chapter-2
-cargo new mini-project
-```
-
-Your structure becomes:
-
-```
-Learning_Rust/
-	Cargo.toml        <-- workspace
-	chapter-1/
-		Cargo.toml
-		src/main.rs
-	chapter-2/
-		Cargo.toml
-		src/main.rs
-	mini-project/
-		Cargo.toml
-		src/main.rs
-```
-
-If you already have folders named like `chapter-01`, either rename them or use those exact names in the workspace members list (see next step).
-
-✅ Step 4 — Register Them in Workspace
-
-Edit the root `Cargo.toml` and list the members:
-
-```toml
-[workspace]
-members = [
-	 "chapter-1",
-	 "chapter-2",
-	 "mini-project",
+resolver = "3"
+members  = [
+  "01-basic",
+  "02-data_types_and_structures",
+  "03-functions",
 ]
 ```
 
-Notes & Tips
+- The folder is a Cargo workspace.
+- Each listed folder is a crate that lives inside the workspace.
 
-- If you created folders with different names (e.g., `chapter-01`), include those exact paths in `members`.
-- To initialize an existing folder as a crate, use `cargo init --bin <folder>`.
-- Build everything at once with: `cargo build --workspace`.
-- Build a single member: `cargo build -p chapter-1`.
+✅ Step 3 — Current Workspace Layout
+
+The workspace you are looking at is organized like this:
+
+```
+Learning_Rust/
+  Cargo.toml                 <-- workspace (see members above)
+
+  01-basic/
+    Cargo.toml               <-- simple binary crate
+    src/main.rs
+
+  02-data_types_and_structures/
+    Cargo.toml               <-- crate with many binaries
+    01-scalar/
+      main.rs
+    02-compound/
+      01-tuple.rs
+      02-arrays.rs
+      03-slices.rs
+      04-strings.rs
+    03-structs/
+      01-structs.rs
+      02-initialization_and_update.rs
+      03-methods_and_associated_fn.rs
+    04-enums/
+      01-enums.rs
+      02-enum_matching.rs
+      03-methods.rs
+
+  03-functions/
+    Cargo.toml               <-- crate with three binaries
+    01-functions.rs
+    02-parameter_passing.rs
+    03-return_values.rs
+```
+
+Inside `02-data_types_and_structures` and `03-functions`, the `Cargo.toml` files declare multiple `[[bin]]` targets so each file can be run as its own example.
+
+✅ Step 4 — Useful Cargo Commands
+
+- Build everything at once: `cargo build --workspace`
+- Run a binary from `01-basic`: `cargo run -p chapter-01`
+- Run a specific example from data types: `cargo run -p chapter-02 --bin tuples`
+- Run a specific example from functions: `cargo run -p chapter-03 --bin return_values`
 
 Next steps
 
 - Add dependencies per-crate in their `Cargo.toml` files.
-- Consider adding a `README.md` at the workspace root describing the learning plan.
+- Use this layout as a template if you want to add more learning crates (e.g., `04-control_flow`, `05-ownership`), and remember to register them under `[workspace].members` in the root `Cargo.toml`.
