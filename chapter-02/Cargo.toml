@@ -37,3 +37,15 @@ path = "src/data_types_and_structures/03-structs/02-initialization_and_update.rs
 [[bin]]
 name = "struct_methods_and_associated_functions"
 path = "src/data_types_and_structures/03-structs/03-methods_and_associated_fn.rs"
+
+[[bin]]
+name = "enums"
+path = "src/data_types_and_structures/04-enums/01-enums.rs"
+
+[[bin]]
+name = "enum_matching"
+path = "src/data_types_and_structures/04-enums/02-enum_matching.rs"
+
+[[bin]]
+name = "enum_methods"
+path = "src/data_types_and_structures/04-enums/03-methods.rs"
