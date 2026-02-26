@@ -1,0 +1,39 @@
+[package]
+name    = "chapter-02"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+
+[[bin]]
+name = "scalar_data_types"
+path = "src/data_types_and_structures/01-scalar/main.rs"
+
+[[bin]]
+name = "tuples"
+path = "src/data_types_and_structures/02-compound/01-tuple.rs"
+
+[[bin]]
+name = "arrays"
+path = "src/data_types_and_structures/02-compound/02-arrays.rs"
+
+[[bin]]
+name = "slices"
+path = "src/data_types_and_structures/02-compound/03-slices.rs"
+
+[[bin]]
+name = "strings"
+path = "src/data_types_and_structures/02-compound/04-strings.rs"
+
+[[bin]]
+name = "structs"
+path = "src/data_types_and_structures/03-structs/01-structs.rs"
+
+[[bin]]
+name = "struct_initialization_and_update"
+path = "src/data_types_and_structures/03-structs/02-initialization_and_update.rs"
+
+[[bin]]
+name = "struct_methods_and_associated_functions"
+path = "src/data_types_and_structures/03-structs/03-methods_and_associated_fn.rs"
