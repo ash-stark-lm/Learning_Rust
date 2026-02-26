@@ -1,0 +1,51 @@
+[package]
+name    = "chapter-02"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+
+[[bin]]
+name = "scalar_data_types"
+path = "01-scalar/main.rs"
+
+[[bin]]
+name = "tuples"
+path = "02-compound/01-tuple.rs"
+
+[[bin]]
+name = "arrays"
+path = "02-compound/02-arrays.rs"
+
+[[bin]]
+name = "slices"
+path = "02-compound/03-slices.rs"
+
+[[bin]]
+name = "strings"
+path = "02-compound/04-strings.rs"
+
+[[bin]]
+name = "structs"
+path = "03-structs/01-structs.rs"
+
+[[bin]]
+name = "struct_initialization_and_update"
+path = "03-structs/02-initialization_and_update.rs"
+
+[[bin]]
+name = "struct_methods_and_associated_functions"
+path = "03-structs/03-methods_and_associated_fn.rs"
+
+[[bin]]
+name = "enums"
+path = "04-enums/01-enums.rs"
+
+[[bin]]
+name = "enum_matching"
+path = "04-enums/02-enum_matching.rs"
+
+[[bin]]
+name = "enum_methods"
+path = "04-enums/03-methods.rs"
