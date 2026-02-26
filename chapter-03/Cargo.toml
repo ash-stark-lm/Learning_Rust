@@ -4,3 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+[[bin]]
+name = "functions"
+path = "src/functions/01-functions.rs"
+
+[[bin]]
+name = "parameter_passing"
+path = "src/functions/02-parameter_passing.rs"
+
+[[bin]]
+name = "return_values"
+path = "src/functions/03-return_values.rs"
