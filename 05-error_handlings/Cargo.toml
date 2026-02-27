@@ -1,0 +1,26 @@
+[package]
+name    = "chapter-05"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "fundamentals"
+path = "01-fundamentals.rs"
+
+[[bin]]
+name = "result_type"
+path = "02-result_type.rs"
+
+[[bin]]
+name = "option_type"
+path = "03-option_type.rs"
+
+[[bin]]
+name = "error_destructuring"
+path = "04-error_destructuring.rs"
+
+[[bin]]
+name = "panic_macro"
+path = "05-panic_macro.rs"

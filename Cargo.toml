@@ -1,3 +1,9 @@
 [workspace]
-resolver = "3"
-members  = ["01-basic", "02-data_types_and_structures", "03-functions"]
+sresolver = "3"
+members = [
+    "01-basic",
+    "02-data_types_and_structures",
+    "03-functions",
+    "04-control_flow_constructs",
+    "05-error_handlings",
+]

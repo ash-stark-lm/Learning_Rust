@@ -16,3 +16,7 @@ path = "02-parameter_passing.rs"
 [[bin]]
 name = "return_values"
 path = "03-return_values.rs"
+
+[[bin]]
+name = "ownership_and_functions"
+path = "04-ownership_and_functions.rs"

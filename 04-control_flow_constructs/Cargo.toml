@@ -1,0 +1,22 @@
+[package]
+name    = "chapter-04"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "if_else"
+path = "01-if-else.rs"
+
+[[bin]]
+name = "loops"
+path = "02-loops.rs"
+
+[[bin]]
+name = "iterations_over_collections"
+path = "03-iterations.rs"
+
+[[bin]]
+name = "pattern_matching"
+path = "04-pattern_matching.rs"
