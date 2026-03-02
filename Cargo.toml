@@ -6,4 +6,5 @@ members = [
     "03-functions",
     "04-control_flow_constructs",
     "05-error_handlings",
+    "06-functions_in_depth",
 ]

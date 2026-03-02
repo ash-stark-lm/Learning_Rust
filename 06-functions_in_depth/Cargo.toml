@@ -1,0 +1,10 @@
+[package]
+name    = "chapter-06"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "basics"
+path = "01-basics.rs"
