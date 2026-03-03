@@ -8,3 +8,15 @@ edition = "2024"
 [[bin]]
 name = "basics"
 path = "01-basics.rs"
+
+[[bin]]
+name = "ownership_in_functions"
+path = "02-ownership.rs"
+
+[[bin]]
+name = "borrowing_in_functions"
+path = "03-borrowing.rs"
+
+[[bin]]
+name = "returning_values_and_ownerships"
+path = "04-returning_values_and_ownership.rs"
