@@ -20,3 +20,11 @@ path = "03-borrowing.rs"
 [[bin]]
 name = "returning_values_and_ownerships"
 path = "04-returning_values_and_ownership.rs"
+
+[[bin]]
+name = "closure"
+path = "05-closure.rs"
+
+[[bin]]
+name = "capturing_the_environment"
+path = "06-capturing_the_environment.rs"

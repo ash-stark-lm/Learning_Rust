@@ -1,0 +1,30 @@
+[package]
+name    = "chapter-07-practice"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "practice_ch01_basic"
+path = "src/ch01_basic.rs"
+
+[[bin]]
+name = "practice_ch02_data_types"
+path = "src/ch02_data_types.rs"
+
+[[bin]]
+name = "practice_ch03_functions"
+path = "src/ch03_functions.rs"
+
+[[bin]]
+name = "practice_ch04_control_flow"
+path = "src/ch04_control_flow.rs"
+
+[[bin]]
+name = "practice_ch05_error_handling"
+path = "src/ch05_error_handling.rs"
+
+[[bin]]
+name = "practice_ch06_functions_in_depth"
+path = "src/ch06_functions_in_depth.rs"
