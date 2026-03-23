@@ -1,0 +1,15 @@
+[package]
+name    = "chapter-08"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "clone_trait"
+path = "01-clone_trait.rs"
+
+
+[[bin]]
+name = "key_rules_of_ownership"
+path = "02-rules_of_ownership.rs"

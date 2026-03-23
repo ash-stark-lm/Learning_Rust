@@ -28,3 +28,7 @@ path = "05-closure.rs"
 [[bin]]
 name = "capturing_the_environment"
 path = "06-capturing_the_environment.rs"
+
+[[bin]]
+name = "move_keyword"
+path = "07-move_keyword.rs"

@@ -8,4 +8,5 @@ members = [
     "05-error_handlings",
     "06-functions_in_depth",
     "07-practice_questions",
+    "08-ownership-borrowing-and-reference",
 ]
